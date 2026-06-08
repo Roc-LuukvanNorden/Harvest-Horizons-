@@ -1,0 +1,59 @@
+User Story - (A.1) Het goal
+
+Omschrijving 
+Als een speler
+wil ik dat ik de game een goal heeft
+zodat ik weet wat ik moet doen/wat er van mij verwacht wordt.
+
+
+Acceptatiecriteria:
+Aan het begin van een speelsessie wordt duidelijk gemaakt wat de goal van de game is.
+De speler weet ten alle tijden wat van hem verwacht wordt om vooruitgang te boeken richting de goal.
+De speler heeft ten alle tijden enige indicatie over zijn progressie richting de goal.
+De speler moet een speelsessie kunnen winnen door de goal te behalen.
+De speler moet een speelsessie kunnen verliezen door de goal niet te behalen.
+De uitkomst (win/lose) moet duidelijk gecommuniceerd worden naar de speler.
+(Extra criteria) De speler kan op een bedoelde alternatieve manier de goal behalen.
+
+
+
+
+
+
+User Story - (A.2) Fair-Flow-Fun
+
+Beschrijving:
+Als een speler
+wil ik een prettige speel beleving
+zodat ik met veel plezier het spel kan spelen.
+
+
+Acceptatiecriteria:
+De controls worden op een duidelijke manier gecommuniceerd naar de speler.
+De speler kan op een prettige manier de main mechanics leren beheersen.!!!
+Er zijn geen bugs aanwezig waardoor het spel herstart moet worden.
+Er zijn geen bugs aanwezig die het plezier van de speler negatief beïnvloeden.
+(Extra criteria) De moeilijkheidsgraad van de game bouwt geleidelijk op.
+(Extra criteria) De game biedt enige vorm van replayability.
+
+
+
+
+
+User Story - (A.3) Game states
+
+
+Beschrijving:
+Als een speler
+wil ik dat de game meerdere verschillende game states heeft en ik deze kan aansturen
+zodat ik het gevoel heb dat ik controle heb over wat en wanneer ik beleef.
+
+
+Acceptatiecriteria:
+De game start op in bepaalde game state waar de speler in alle rust de volgende game state kan bepalen. (Een Menu bijvoorbeeld)
+De speler kan na een speelsessie een nieuwe speelsessie starten zonder het spel opnieuw op te hoeven opstarten.
+Na (en of tijdens) een speelsessie kan de speler terug naar het “menu”.
+(Extra criteria) Iedere game flow state heeft dezelfde look & feel, passende bij de gameplay.
+(Extra criteria) Er is een game state aanwezig waar de speler meer informatie kan krijgen over het spel.
+
+
