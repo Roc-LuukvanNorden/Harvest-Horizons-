@@ -10,7 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 3859865476214824386}
   - component: {fileID: 7962147386842837237}
-  - component: {fileID: 4632340221389508389}
+  - component: {fileID: 6436347042453366857}
+  - component: {fileID: 5607024050770499754}
+  - component: {fileID: -8804625243554380339}
+  - component: {fileID: 6773991289853334629}
+  - component: {fileID: 1545284044705049910}
+  - component: {fileID: 1088978016246055238}
+  - component: {fileID: 7563901620671492294}
+  - component: {fileID: 2457946049463698029}
   m_Layer: 0
   m_Name: CornPrefab
   m_TagString: Untagged
@@ -79,19 +86,92 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.75, y: 0.375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4632340221389508389
+--- !u!61 &6436347042453366857
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458482199430903376}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 0.375}
+    newSize: {x: 0.75, y: 0.375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.5, y: 0.5}
+  m_EdgeRadius: 0
+--- !u!50 &5607024050770499754
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458482199430903376}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-8804625243554380339
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,12 +180,69 @@ MonoBehaviour:
   m_GameObject: {fileID: 6458482199430903376}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 968ba6f98456dc4478b21342a11b8bf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4fc4213905eb59740946c1de53b2beda, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CornGrowingScript
-  growthStageSprites:
-  - {fileID: -3375394081084854182, guid: a5979ea87b52b43439b95316787bda70, type: 3}
-  - {fileID: 5135653636432838242, guid: a5979ea87b52b43439b95316787bda70, type: 3}
-  - {fileID: 5311219838426957598, guid: a5979ea87b52b43439b95316787bda70, type: 3}
-  growthInterval: 30
-  maxStages: 3
+  m_EditorClassIdentifier: Assembly-CSharp::SellableComponent
+  sellValue: 5
+--- !u!114 &6773991289853334629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458482199430903376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182cc2fd328106745831d22225863cbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrowthComponent
+  growthData: {fileID: 11400000, guid: 4ede83d729c125c4a8174c24947203a9, type: 2}
+--- !u!114 &1545284044705049910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458482199430903376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 943758a98c23dcd48b5d355e7bc98e4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrowthVisualComponent
+--- !u!114 &1088978016246055238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458482199430903376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dbeba7da2ebae40998f21cfcea17e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HarvestComponent
+--- !u!114 &7563901620671492294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458482199430903376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50a76a5df7694c44b13f8f9dc9ed1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TilePlantComponent
+--- !u!114 &2457946049463698029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458482199430903376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc4213905eb59740946c1de53b2beda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SellableComponent
+  sellValue: 5
