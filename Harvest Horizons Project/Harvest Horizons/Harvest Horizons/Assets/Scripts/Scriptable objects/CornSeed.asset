@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: CornSeed
   itemSprite: {fileID: 21300000, guid: d6589ebaed8ee6f46bad2d1fe3191129, type: 3}
   itemType: 1
+  cropPrefab: {fileID: 6458482199430903376, guid: 28305830a97a34f46bda7a3884f44bb7, type: 3}

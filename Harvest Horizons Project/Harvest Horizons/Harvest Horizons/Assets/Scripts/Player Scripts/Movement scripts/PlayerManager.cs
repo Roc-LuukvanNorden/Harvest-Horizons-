@@ -15,11 +15,7 @@ public class PlayerManager : MonoBehaviour
     {
         movement2D.Move(keyboardInputs.GetInput());
 
-        if (keyboardInputs.GetInteract())
-        {
-            Vector3Int tilePosition = grid.WorldToCell(transform.position);
-            tileManager.TillGround(tilePosition);
-        }
+        
     }
 
 }
