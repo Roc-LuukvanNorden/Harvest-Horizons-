@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 2635525988410835898}
   - component: {fileID: 1333972445880365459}
   - component: {fileID: -5794071414011891889}
+  - component: {fileID: -4765447750993060200}
   m_Layer: 0
   m_Name: BeanPrefab
   m_TagString: Untagged
@@ -259,3 +260,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b50a76a5df7694c44b13f8f9dc9ed1d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TilePlantComponent
+--- !u!114 &-4765447750993060200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7201137074560677013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2374dfe0e3399974b86a0ac3b14a0d92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CropGrowthTimer

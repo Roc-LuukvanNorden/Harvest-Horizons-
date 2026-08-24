@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3109336854587239317}
   - component: {fileID: 3228861073508499781}
   - component: {fileID: 5634682243573458884}
+  - component: {fileID: -8484222823280952915}
   m_Layer: 0
   m_Name: TomatoPrefab
   m_TagString: Untagged
@@ -245,3 +246,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b50a76a5df7694c44b13f8f9dc9ed1d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TilePlantComponent
+--- !u!114 &-8484222823280952915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8550788990375761390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2374dfe0e3399974b86a0ac3b14a0d92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CropGrowthTimer
